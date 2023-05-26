@@ -1,0 +1,30 @@
+server:
+  port: 1111
+
+spring:
+  application:
+    name: admin
+  #mysql
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/vaccine
+#    username:
+#    password:
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+  #mariadb
+  datasource:
+    #利用ENC(...)获取解码信息
+    url: ENC(DcUUmJQiHtxxnxNtzdSVU23VqH0QdceLvnir6+01kBC3oAkOppb34H/dzFtK1xhrXVou7gzES4NgatpQits3zbNg3YNAwbqrf2ykN5dP8LIfdWUFHKvEwIlKyFluf+g7ZO34ueAG7JA=)
+    username: ENC(8JX+V46Wi7Ntt+rJGd0UEQ==)
+    password: ENC(2aBTROaAgM700OYTJoCyLw==)
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+#jasypt加密的密钥
+jasypt:
+  encryptor:
+    #指定加密方式
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator

@@ -1,0 +1,49 @@
+server:
+  port: 1112
+
+spring:
+  application:
+    name: users
+
+  cloud:
+    nacos:
+      server-addr: ENC(GSG7k1yYrxZ6wB+sF8Y5kkU+f0Tce392rpoCBaMXs9E=)
+
+  #mysql
+#  datasource:
+#    url: jdbc:mysql://localhost:3306/vaccine
+#    driver-class-name: com.mysql.cj.jdbc.Driver
+#    username:
+#    password:
+  #mariadb
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    #利用ENC(...)获取解码信息
+    url: ENC(DcUUmJQiHtxxnxNtzdSVU23VqH0QdceLvnir6+01kBC3oAkOppb34H/dzFtK1xhrXVou7gzES4NgatpQits3zbNg3YNAwbqrf2ykN5dP8LIfdWUFHKvEwIlKyFluf+g7ZO34ueAG7JA=)
+    username: ENC(8JX+V46Wi7Ntt+rJGd0UEQ==)
+    password: ENC(2aBTROaAgM700OYTJoCyLw==)
+
+  #swagger
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  redis:
+    #host: localhost
+    host: ENC(aKDMumyiTO8xCp4HMvV+LMf6unCuZQtB)
+    password: ENC(uw15SAFSk5XF/5bjS0lINQ==)
+    port: 6379
+    timeout: 1800000
+    database: 0
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+
+#jasypt加密的密钥，这里是自定义的密钥
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator

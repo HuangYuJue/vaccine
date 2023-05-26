@@ -1,0 +1,30 @@
+[
+  {
+    "name": "order",
+    "path": "/order",
+    "component": "E:\\\\idea项目\\\\vaccine\\\\myVue\\\\user-vue\\\\pages\\\\order\\\\index.vue",
+    "chunkName": "pages/order/index",
+    "_name": "_86dc4540"
+  },
+  {
+    "name": "user",
+    "path": "/user",
+    "component": "E:\\\\idea项目\\\\vaccine\\\\myVue\\\\user-vue\\\\pages\\\\user\\\\index.vue",
+    "chunkName": "pages/user/index",
+    "_name": "_0c14b98a"
+  },
+  {
+    "name": "vaccine-id",
+    "path": "/vaccine/:id?",
+    "component": "E:\\\\idea项目\\\\vaccine\\\\myVue\\\\user-vue\\\\pages\\\\vaccine\\\\_id.vue",
+    "chunkName": "pages/vaccine/_id",
+    "_name": "_226f5e41"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "E:\\\\idea项目\\\\vaccine\\\\myVue\\\\user-vue\\\\pages\\\\index.vue",
+    "chunkName": "pages/index",
+    "_name": "_4b50d466"
+  }
+]
