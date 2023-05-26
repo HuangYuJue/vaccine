@@ -1,0 +1,36 @@
+server:
+  port: 1113
+spring:
+  application:
+    name: msm
+
+  cloud:
+    nacos:
+      server-addr: ENC(GSG7k1yYrxZ6wB+sF8Y5kkU+f0Tce392rpoCBaMXs9E=)
+
+  redis:
+    #host: localhost
+    host: ENC(JsOMqxkEOl/ifLcCzLkZs9jhXntOesrn)
+    port: 6379
+    password: ENC(L1QrNH3K6ZYLvTOVbdhVgg==)
+    timeout: 1800000
+    database: 0
+    lettuce:
+      pool:
+        max-active: 20
+        max-wait: -1
+        max-idle: 5
+        min-idle: 0
+
+tencent:
+  sms:
+    secretId: ENC(U8ZLWlgaWGJ//95EqJpl0QvbzIkJkUMXoXfZLs6uE/TmlSefy99p9yot/ZaO2JKy)
+    keysecret: ENC(TbTh8NkRpnx2wPvpXgjtDGOeZ8JkyfVQ3XZ2JRpAVVbTpoABoBYZ7HGSEVYtwRhy)
+    smsSdkAppId: ENC(AdPUlFCDUtWnsri56VltLwV2Qzcxqppn)
+    signName: ENC(r9p13b1jDlYtg0fqKRjHAue0jYfr+DTxoKPZ9t+w/7sJpYAIDue+Cw==)
+    templateId: ENC(FWr54RdWuC+EZcOG6Fb+9g==)
+
+jasypt:
+  encryptor:
+    algorithm: PBEWithMD5AndDES
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
